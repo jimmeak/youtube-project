@@ -1,7 +1,8 @@
 <?php
 
+use Jimmeak\Youtube\Kernel;
+
 require_once 'vendor/autoload.php';
 
-use Jimmeak\Youtube\HelloWorld\HelloWorld;
-
-new HelloWorld();
+$kernel = new Kernel();
+$kernel->run();
