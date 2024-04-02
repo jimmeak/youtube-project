@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+    
+    webserver:
+        container_name: new_youtube_webserver
+        build:
+            context: .docker/webserver
+            dockerfile: Dockerfile
+        volumes:
+            - .:/var/www/html
+        ports:
+            - "8081:80"

@@ -1,0 +1,15 @@
+{
+    "name": "jimmeak/first-settings",
+    "autoload": {
+        "psr-4": {
+            "Jimmeak\\Youtube\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jimmy Found",
+            "email": "jimmeak.found@gmail.com"
+        }
+    ],
+    "require": {}
+}
