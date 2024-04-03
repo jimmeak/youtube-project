@@ -2,14 +2,17 @@
 
 namespace Jimmeak\Youtube;
 
-use Jimmeak\Youtube\Http\Response;
+use Jimmeak\Youtube\Http\Request;
 
 class Kernel
 {
     public function run(): void
     {
+        $request = new Request();
+
+        echo '<hr>';
         echo '<pre>';
-        $response = new Response();
-        echo $response;
+        var_dump($request->query->all());
+
     }
 }
