@@ -26,4 +26,19 @@ class Request
         $this->cookies = Bag::new($_COOKIE);
         $this->server = Bag::new($_SERVER);
     }
+
+    public function getRequestUri(): string
+    {
+        return $this->requestUri;
+    }
+
+    public function getPath(): string
+    {
+        return parse_url($this->requestUri, PHP_URL_PATH);
+    }
+
+    public function getHttpMethod(): string
+    {
+        return $this->httpMethod;
+    }
 }
